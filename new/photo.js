@@ -69,7 +69,9 @@ $(document).ready(function() {
     });
     
     $('.photo-logo-step-2-other a').click(function(e) {
-        $('.photo-logo-step-1-file input').trigger('click');
+        $('.photo-logo-step-1').show();
+        $('.photo-logo-step-2').hide();
+        $('html, body').animate({'scrollTop': 0});
         e.preventDefault();
     });
 
