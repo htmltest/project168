@@ -20,9 +20,11 @@
 .photo-logo-step-1-container {float:left; width:494px}
 .photo-logo-step-1-title {font:32px/45px HelveticaNeueCyrMedium, sans-serif; color:#000; letter-spacing:0.03em; text-transform:uppercase}
 .photo-logo-step-1-text {margin:20px 0 0 0; font:18px/27px HelveticaNeueCyrLight, sans-serif; color:#000}
-.photo-logo-step-1-file {position:relative; overflow:hidden; margin:40px 0 0 0; height:90px; background:#f4f4f4}
+.photo-logo-step-1-file {position:relative; overflow:hidden; margin:40px 0 0 0; height:90px; background:#f4f4f4; transition:all 0.2s}
+.photo-logo-step-1-file:hover {background:#ececec}
 .photo-logo-step-1-file::before {content:""; display:block; position:absolute; left:10px; top:10px; right:10px; bottom:10px; border:1px dashed #d2d2d2}
-.photo-logo-step-1-file-title {position:absolute; left:0; top:50%; right:0; text-align:center; transform:translateY(-50%); font:16px/24px HelveticaNeueCyr, sans-serif; color:#8a8a8a; text-transform:uppercase; letter-spacing:0.03em}
+.photo-logo-step-1-file-title {position:absolute; left:0; top:50%; right:0; text-align:center; transform:translateY(-50%); font:16px/24px HelveticaNeueCyr, sans-serif; color:#8a8a8a; text-transform:uppercase; letter-spacing:0.03em; transition:all 0.2s}
+.photo-logo-step-1-file:hover .photo-logo-step-1-file-title {color:#222}
 .photo-logo-step-1-file-title::before {content:""; display:inline-block; vertical-align:middle; width:31px; height:31px; background:url(images/file-input.svg) no-repeat; margin:-4px 12px 0 0}
 .photo-logo-step-1-file input {height:200px; position:absolute; top:0; right:0; opacity:0; cursor:pointer; font-size:200px; background:url(images/blank.gif); -webkit-appearance:none}
 .photo-logo-step-1-steps {margin:40px 0 0 0; font:14px/21px HelveticaNeueCyr, sans-serif; color:#000}
@@ -52,6 +54,9 @@
 .photo-logo-step-2-download a svg {display:inline-block; vertical-align:middle; margin:-2px 10px 0 0}
 .photo-logo-step-2-download a path {stroke:#2b2b2b; transition:all 0.3s ease-out 0s}
 .photo-logo-step-2-download a:hover path {stroke:#fff}
+.photo-logo-step-2-other {margin:26px 0 0 0; text-align:center; font:14px/21px NGTL_Bold, sans-serif; text-transform:uppercase; letter-spacing:0.03em}
+.photo-logo-step-2-other a {color:#797979; text-decoration:none; border-bottom:1px dashed #797979; transition:all 0.2s}
+.photo-logo-step-2-other a:hover {border-bottom-color:transparent}
 
 @media (max-width:1169px) {
     .photo-logo-step-2 {padding:50px 0 90px 0}
