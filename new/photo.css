@@ -45,8 +45,9 @@
 .photo-logo-step-2-select-item a {display:block; height:44px; font:16px/44px NGTL_Bold, sans-serif; text-transform:uppercase; letter-spacing:0.03em; text-decoration:none; color:#9d9d9d; background:#f4f4f4; text-align:center}
 .photo-logo-step-2-select-item a:hover,
 .photo-logo-step-2-select-item.active a {color:#fff; background:#c1064b}
-.photo-logo-step-2-img {margin:20px 0 0 0; height:467px; position:relative}
-.photo-logo-step-2-img-container {position:absolute; left:0; top:0; width:100%; height:100%}
+.photo-logo-step-2-img {margin:20px 0 0 0; height:467px; position:relative; background:#fff; line-height:467px; text-align:center}
+.photo-logo-step-2-img img {display:inline-block; vertical-align:middle; width:auto; height:auto; max-width:100%; max-height:100%}
+.photo-logo-step-2-img-container {visibility:hidden; position:absolute; left:0; top:0; width:100%; height:100%}
 .photo-logo-step-2-img-container canvas {position:absolute; left:50%; top:0; width:380px; height:467px; transform:translateX(-50%)}
 .photo-logo-step-2-download {margin:40px 0 0 0; text-align:center}
 .photo-logo-step-2-download a {display:inline-block; vertical-align:top; width:176px; height:44px; border:2px solid #000; text-align:center; text-decoration:none; font:16px/40px NGTL_Bold, sans-serif; text-transform:uppercase; letter-spacing:0.03em; color:#2b2b2b}
