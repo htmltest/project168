@@ -66,6 +66,5 @@
 }
 
 @media (max-width:479px) {
-    .photo-logo-step-2-img {height:309px}
-    .photo-logo-step-2-img-container {margin-top:-50px; transform:scale(0.66)}
+    .photo-logo-step-2-img {height:309px; line-height:309px}
 }
