@@ -73,7 +73,6 @@ $(document).ready(function() {
                 var logoHeight = imgWidth / 380 * logoImg.height / 7;
                 context.drawImage(logoImg, imgWidth - logoWidth - 10, imgHeight - logoHeight - 10, logoWidth, logoHeight);
                 var imageDownload = canvas.toDataURL('image/png');
-                $('.photo-logo-step-2-download a').attr('href', imageDownload);
                 $('.photo-logo-step-2-img').append('<img src="' + imageDownload + '" alt="" />');
                 $('.photo-logo-step-2-img img').one('load', function() {
                     $('.photo-logo-step-2').removeClass('loading');
@@ -88,6 +87,14 @@ $(document).ready(function() {
         $('.photo-logo-step-1').show();
         $('.photo-logo-step-2').hide();
         $('html, body').animate({'scrollTop': 0});
+        e.preventDefault();
+    });
+
+    $('.photo-logo-step-2-download a').click(function(e) {
+        canvas.toBlob(function(e) {
+            var t = document.createElement('a');
+            (t.download = 'image.png'), (t.href = URL.createObjectURL(e)), t.click();
+        }, 'image/png');
         e.preventDefault();
     });
 
